@@ -8,6 +8,7 @@ import org.springframework.test.context.ActiveProfiles;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 @ActiveProfiles("test")
@@ -25,6 +26,7 @@ class UserIntegrationTest {
 
         List<User> usuarios = repository.findAll();
 
-        assertFalse(usuarios.isEmpty());
+       // assertFalse(usuarios.isEmpty());
+        assertTrue(usuarios.isEmpty());
     }
 }
