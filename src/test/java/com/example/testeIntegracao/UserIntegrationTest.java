@@ -28,7 +28,7 @@ class UserIntegrationTest {
 
         List<User> usuarios = repository.findAll(); //busca dados reais para validacao
 
-       // assertFalse(usuarios.isEmpty());
-        assertTrue(usuarios.isEmpty());
+        assertFalse(usuarios.isEmpty());
+        //assertTrue(usuarios.isEmpty());
     }
 }
